@@ -1,13 +1,16 @@
-# SingularCoffee — public
+# SingularCoffee
 
-The landing page and the public recipe catalogue of SingularCoffee, an Android
-app for specialty coffee. The app itself is a private repository; this one holds
-what has to be readable with no account:
+The public face of SingularCoffee, an Android app for specialty coffee: the
+landing page, the recipe catalogue, and the place to report things.
 
 - **`recipes.json`** — the catalogue the app refreshes from.
 - **`docs/`** — the page published at
-  <https://jmalpica1010.github.io/singular-coffee/>.
-- **Issues** — where a missing scale, a bug, or a recipe gets reported.
+  <https://jmalpica1010.github.io/singularcoffee-app/>.
+- **Issues** — a missing scale, a bug, or a recipe.
+
+The source of the app lives in `singularcoffee-dev`, which is private. Nothing
+here needs it: everything in this repository is meant to be read without an
+account, which is the whole reason the two are separate.
 
 ## The catalogue
 
