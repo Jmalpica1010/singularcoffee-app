@@ -79,6 +79,14 @@
   }
   .cta:hover { filter: brightness(1.08); }
   .note { color: var(--muted); font-size: 14px; }
+  .formula {
+    font: 600 17px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: var(--panel); border: 1px solid var(--hairline);
+    border-radius: 10px; padding: 14px 18px; overflow-x: auto;
+  }
+  .steps { margin: 0; padding-left: 24px; }
+  .steps li { margin-bottom: 12px; }
+  .steps li:last-child { margin-bottom: 0; }
   a { color: var(--copper); }
 
   footer {
@@ -163,19 +171,60 @@
   </p>
 
   <h2>Tu extracción sin refractómetro</h2>
+  <p>
+    Todo lo que se disolvió en la taza ya no está en el lecho. La diferencia entre lo
+    que moliste y lo que queda al secarlo <em>es</em> la masa extraída:
+  </p>
+  <p class="formula"><strong>Rendimiento = (dosis − poso seco) ÷ dosis × 100</strong></p>
+  <p>
+    Es el método con el que se calibran los refractómetros, y solo necesita la
+    báscula que ya tienes. Los pasos completos:
+  </p>
+
   <div class="card">
-    <h3>Seca el poso y pésalo</h3>
+    <ol class="steps">
+      <li>Pesa el café molido con la báscula y registra el peso exacto. No el número
+        redondo: 20.0 g clavados no existen.</li>
+      <li><strong>Antes de preparar</strong>, pesa un filtro nuevo y seco del mismo
+        tipo y apunta cuánto pesa. Lo vas a restar al final.</li>
+      <li>Prepara el café como siempre.</li>
+      <li>Recoge <strong>todo</strong> el lecho. Lo más práctico es doblar el filtro
+        con el poso dentro y no tirar nada.</li>
+      <li>Sécalo: en horno a unos <strong>100 °C entre una y dos horas</strong>, o al
+        aire 24 a 48 horas en un sitio seco.</li>
+      <li>Déjalo <strong>enfriar a temperatura ambiente</strong> antes de pesarlo.</li>
+      <li>Pesa el conjunto y resta el peso del filtro seco. Eso es tu poso seco.</li>
+      <li>Anótalo en la preparación. La app calcula el rendimiento y te sitúa en la
+        ventana de la SCA.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3>Los tres errores que arruinan la medición</h3>
     <p>
-      Todo lo que se disolvió en la taza ya no está en el lecho. La diferencia
-      entre lo que moliste y lo que queda al secarlo <em>es</em> la masa extraída:
+      <strong>El filtro.</strong> Un papel de V60 seco pesa cerca de 1 g. Sobre una
+      dosis de 20 g, olvidarlo son <strong>5 puntos</strong> de rendimiento: la
+      diferencia entre subextraído y sobreextraído.
     </p>
-    <p><strong>Rendimiento = (dosis − poso seco) ÷ dosis × 100</strong></p>
     <p>
-      Es el método con el que se calibran los refractómetros. Solo necesita la
-      báscula que ya tienes: recoge el lecho, sécalo, pésalo frío y anótalo. La app
-      hace el resto y te sitúa en la ventana de la SCA.
+      <strong>Secar al aire en clima húmedo.</strong> El café se queda con la humedad
+      del ambiente, el poso pesa de más y el rendimiento sale bajo. El horno es
+      bastante mejor.
+    </p>
+    <p>
+      <strong>Pesar en caliente.</strong> Espera a temperatura ambiente. 0.1 g de
+      error son 0.5 puntos de rendimiento sobre 20 g de dosis.
     </p>
   </div>
+
+  <p class="note">
+    Para el rendimiento basta la dosis y el poso seco. Para el TDS hace falta además
+    el peso de la bebida. El poso pegado a la cafetera y los finos que se van a la
+    taza no se recuperan, así que esto da unas décimas menos que un refractómetro —
+    pero para comparar una preparación con la siguiente da igual, porque el error es
+    el mismo en las dos. La app trae el procedimiento completo dentro, en «Cómo se
+    hace».
+  </p>
 
   <h2>Y lo demás</h2>
   <div class="card">
@@ -218,12 +267,12 @@
     Está en pruebas cerradas con un grupo pequeño mientras se pule. Si quieres entrar
     cuando se abra, deja tu correo y te aviso — sin lista de novedades ni nada más.
   </p>
-  <!-- PENDIENTE: poner aquí el destino de la lista de espera.
-       Dos opciones, las dos gratis y sin servidor:
-         · un formulario (Tally, Google Forms) — recomendado, no expone tu correo
-         · mailto:TU-CORREO — más simple, pero queda público y atrae spam
-       Mientras esto siga en "#", el botón no lleva a ningún sitio. -->
-  <a class="cta" href="#">Apuntarme a la lista</a>
+  <!-- Correo personal, provisional hasta que haya dominio y formulario.
+       Un formulario (Tally, Google Forms) no expone ninguna dirección y es lo
+       que conviene cuando esto se abra al público. -->
+  <a class="cta" href="mailto:malpica.jonatan@gmail.com?subject=SingularCoffee%20%E2%80%94%20lista%20de%20espera&amp;body=Hola%2C%20quiero%20probar%20SingularCoffee.%0A%0AMi%20b%C3%A1scula%20es%3A%20">
+    Apuntarme a la lista
+  </a>
   <p class="note">
     Dime qué báscula tienes: es lo que decide a quién puedo dar acceso primero.
   </p>
