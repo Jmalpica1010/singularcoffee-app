@@ -22,10 +22,42 @@
         }
       },
       "steps": [
-        { "kind": "BLOOM", "atSecond": 0, "targetFraction": 0.14, "text": { "es": "Bloom con tres veces el peso del cafe y agitar con cuchara.", "en": "Bloom with three times the coffee weight and stir with a spoon." } },
-        { "kind": "POUR", "atSecond": 45, "targetFraction": 1.0, "text": { "es": "Vertido unico y continuo hasta el 100 %, en espiral amplia.", "en": "One continuous pour to 100 %, in a wide spiral." } },
-        { "kind": "SWIRL", "atSecond": 105, "targetFraction": 1.0, "text": { "es": "Swirl para nivelar el lecho contra las paredes.", "en": "Swirl to level the bed against the walls." } },
-        { "kind": "DRAWDOWN", "atSecond": 120, "targetFraction": 1.0, "text": { "es": "Drenado libre. Objetivo total: 3:00-3:30.", "en": "Free drawdown. Target total: 3:00-3:30." } }
+        {
+          "kind": "BLOOM",
+          "atSecond": 0,
+          "targetFraction": 0.14,
+          "text": {
+            "es": "Bloom con tres veces el peso del café y agitar con cuchara.",
+            "en": "Bloom with three times the coffee weight and stir with a spoon."
+          }
+        },
+        {
+          "kind": "POUR",
+          "atSecond": 45,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Vertido único y continuo hasta el 100 %, en espiral amplia.",
+            "en": "One continuous pour to 100 %, in a wide spiral."
+          }
+        },
+        {
+          "kind": "SWIRL",
+          "atSecond": 105,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Swirl para nivelar el lecho contra las paredes.",
+            "en": "Swirl to level the bed against the walls."
+          }
+        },
+        {
+          "kind": "DRAWDOWN",
+          "atSecond": 120,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Drenado libre. Objetivo total: 3:00-3:30.",
+            "en": "Free drawdown. Target total: 3:00-3:30."
+          }
+        }
       ]
     },
     {
@@ -36,9 +68,9 @@
       "waterTempC": 93,
       "text": {
         "es": {
-          "name": "4:6 en frio",
+          "name": "4:6 en frío",
           "grindHint": "Media-gruesa",
-          "description": "El 4:6 sobre hielo: el 40 % del peso total va como hielo en la jarra y el agua caliente se reduce en la misma proporcion."
+          "description": "El 4:6 sobre hielo: el 40 % del peso total va como hielo en la jarra y el agua caliente se reduce en la misma proporción."
         },
         "en": {
           "name": "Iced 4:6",
@@ -47,11 +79,51 @@
         }
       },
       "steps": [
-        { "kind": "POUR", "atSecond": 0, "targetFraction": 0.2, "text": { "es": "Con hielo ya pesado en la jarra, vertido 1 hasta el 20 %.", "en": "With the ice already weighed in the server, pour 1 to 20 %." } },
-        { "kind": "POUR", "atSecond": 45, "targetFraction": 0.4, "text": { "es": "Vertido 2 hasta el 40 %.", "en": "Pour 2 to 40 %." } },
-        { "kind": "POUR", "atSecond": 90, "targetFraction": 0.7, "text": { "es": "Vertido 3 hasta el 70 %.", "en": "Pour 3 to 70 %." } },
-        { "kind": "POUR", "atSecond": 130, "targetFraction": 1.0, "text": { "es": "Vertido 4 hasta el 100 %.", "en": "Pour 4 to 100 %." } },
-        { "kind": "DRAWDOWN", "atSecond": 170, "targetFraction": 1.0, "text": { "es": "Drenado y remover el hielo restante.", "en": "Drawdown, then stir the remaining ice." } }
+        {
+          "kind": "POUR",
+          "atSecond": 0,
+          "targetFraction": 0.2,
+          "text": {
+            "es": "Con hielo ya pesado en la jarra, vertido 1 hasta el 20 %.",
+            "en": "With the ice already weighed in the server, pour 1 to 20 %."
+          }
+        },
+        {
+          "kind": "POUR",
+          "atSecond": 45,
+          "targetFraction": 0.4,
+          "text": {
+            "es": "Vertido 2 hasta el 40 %.",
+            "en": "Pour 2 to 40 %."
+          }
+        },
+        {
+          "kind": "POUR",
+          "atSecond": 90,
+          "targetFraction": 0.7,
+          "text": {
+            "es": "Vertido 3 hasta el 70 %.",
+            "en": "Pour 3 to 70 %."
+          }
+        },
+        {
+          "kind": "POUR",
+          "atSecond": 130,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Vertido 4 hasta el 100 %.",
+            "en": "Pour 4 to 100 %."
+          }
+        },
+        {
+          "kind": "DRAWDOWN",
+          "atSecond": 170,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Drenado y remover el hielo restante.",
+            "en": "Drawdown, then stir the remaining ice."
+          }
+        }
       ]
     },
     {
@@ -64,7 +136,7 @@
         "es": {
           "name": "Prensa francesa sin remover",
           "grindHint": "Media",
-          "description": "Inmersion larga, se retira la costra en vez de removerla y no se presiona el embolo: la taza sale casi sin finos."
+          "description": "Inmersión larga, se retira la costra en vez de removerla y no se presiona el émbolo: la taza sale casi sin finos."
         },
         "en": {
           "name": "French press, no stir",
@@ -73,9 +145,33 @@
         }
       },
       "steps": [
-        { "kind": "POUR", "atSecond": 0, "targetFraction": 1.0, "text": { "es": "Anadir toda el agua de golpe y dejar reposar.", "en": "Add all the water at once and leave it alone." } },
-        { "kind": "SWIRL", "atSecond": 240, "targetFraction": 1.0, "text": { "es": "A los 4 min, romper la costra removiendo suavemente.", "en": "At 4 min, break the crust with a gentle stir." } },
-        { "kind": "DRAWDOWN", "atSecond": 300, "targetFraction": 1.0, "text": { "es": "Retirar la espuma con dos cucharas y esperar 5 min mas. Servir sin presionar.", "en": "Skim the foam with two spoons and wait 5 more minutes. Pour without pressing." } }
+        {
+          "kind": "POUR",
+          "atSecond": 0,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Añadir toda el agua de golpe y dejar reposar.",
+            "en": "Add all the water at once and leave it alone."
+          }
+        },
+        {
+          "kind": "SWIRL",
+          "atSecond": 240,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "A los 4 min, romper la costra removiendo suavemente.",
+            "en": "At 4 min, break the crust with a gentle stir."
+          }
+        },
+        {
+          "kind": "DRAWDOWN",
+          "atSecond": 300,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Retirar la espuma con dos cucharas y esperar 5 min más. Servir sin presionar.",
+            "en": "Skim the foam with two spoons and wait 5 more minutes. Pour without pressing."
+          }
+        }
       ]
     },
     {
@@ -88,7 +184,7 @@
         "es": {
           "name": "Chemex para dos",
           "grindHint": "Media-gruesa",
-          "description": "Pulsos amplios sobre un filtro grueso. Enjuagar bien el filtro o la taza sabra a papel."
+          "description": "Pulsos amplios sobre un filtro grueso. Enjuagar bien el filtro o la taza sabrá a papel."
         },
         "en": {
           "name": "Chemex for two",
@@ -97,11 +193,51 @@
         }
       },
       "steps": [
-        { "kind": "BLOOM", "atSecond": 0, "targetFraction": 0.12, "text": { "es": "Bloom del 12 % y agitar el lecho.", "en": "Bloom to 12 % and agitate the bed." } },
-        { "kind": "PULSE", "atSecond": 45, "targetFraction": 0.45, "text": { "es": "Pulso hasta el 45 %.", "en": "Pulse to 45 %." } },
-        { "kind": "PULSE", "atSecond": 105, "targetFraction": 0.75, "text": { "es": "Pulso hasta el 75 %.", "en": "Pulse to 75 %." } },
-        { "kind": "PULSE", "atSecond": 165, "targetFraction": 1.0, "text": { "es": "Pulso final hasta el 100 %.", "en": "Final pulse to 100 %." } },
-        { "kind": "DRAWDOWN", "atSecond": 225, "targetFraction": 1.0, "text": { "es": "Drenado. Objetivo total: 4:30-5:30.", "en": "Drawdown. Target total: 4:30-5:30." } }
+        {
+          "kind": "BLOOM",
+          "atSecond": 0,
+          "targetFraction": 0.12,
+          "text": {
+            "es": "Bloom del 12 % y agitar el lecho.",
+            "en": "Bloom to 12 % and agitate the bed."
+          }
+        },
+        {
+          "kind": "PULSE",
+          "atSecond": 45,
+          "targetFraction": 0.45,
+          "text": {
+            "es": "Pulso hasta el 45 %.",
+            "en": "Pulse to 45 %."
+          }
+        },
+        {
+          "kind": "PULSE",
+          "atSecond": 105,
+          "targetFraction": 0.75,
+          "text": {
+            "es": "Pulso hasta el 75 %.",
+            "en": "Pulse to 75 %."
+          }
+        },
+        {
+          "kind": "PULSE",
+          "atSecond": 165,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Pulso final hasta el 100 %.",
+            "en": "Final pulse to 100 %."
+          }
+        },
+        {
+          "kind": "DRAWDOWN",
+          "atSecond": 225,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Drenado. Objetivo total: 4:30-5:30.",
+            "en": "Drawdown. Target total: 4:30-5:30."
+          }
+        }
       ]
     },
     {
@@ -112,7 +248,7 @@
       "waterTempC": 85,
       "text": {
         "es": {
-          "name": "AeroPress rapida",
+          "name": "AeroPress rápida",
           "grindHint": "Fina",
           "description": "Un minuto de contacto y prensado corto. Temperatura baja para que el tueste claro no amargue."
         },
@@ -123,9 +259,33 @@
         }
       },
       "steps": [
-        { "kind": "POUR", "atSecond": 0, "targetFraction": 1.0, "text": { "es": "Toda el agua de golpe, posicion normal.", "en": "All the water at once, standard orientation." } },
-        { "kind": "STIR", "atSecond": 15, "targetFraction": 1.0, "text": { "es": "Agitar cinco veces y colocar el embolo para sellar.", "en": "Stir five times and seat the plunger to seal." } },
-        { "kind": "DRAWDOWN", "atSecond": 60, "targetFraction": 1.0, "text": { "es": "Prensar en 20 s, parando al oir el silbido.", "en": "Press over 20 s, stopping at the hiss." } }
+        {
+          "kind": "POUR",
+          "atSecond": 0,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Toda el agua de golpe, posición normal.",
+            "en": "All the water at once, standard orientation."
+          }
+        },
+        {
+          "kind": "STIR",
+          "atSecond": 15,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Agitar cinco veces y colocar el émbolo para sellar.",
+            "en": "Stir five times and seat the plunger to seal."
+          }
+        },
+        {
+          "kind": "DRAWDOWN",
+          "atSecond": 60,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Prensar en 20 s, parando al oír el silbido.",
+            "en": "Press over 20 s, stopping at the hiss."
+          }
+        }
       ]
     },
     {
@@ -138,7 +298,7 @@
         "es": {
           "name": "Clever de cuatro minutos",
           "grindHint": "Media",
-          "description": "Inmersion completa con filtro de papel: cuerpo de prensa francesa y claridad de filtrado. Casi imposible de arruinar."
+          "description": "Inmersión completa con filtro de papel: cuerpo de prensa francesa y claridad de filtrado. Casi imposible de arruinar."
         },
         "en": {
           "name": "Four minute Clever",
@@ -147,9 +307,33 @@
         }
       },
       "steps": [
-        { "kind": "POUR", "atSecond": 0, "targetFraction": 1.0, "text": { "es": "Valvula cerrada. Toda el agua de una vez.", "en": "Valve closed. All the water at once." } },
-        { "kind": "STIR", "atSecond": 30, "targetFraction": 1.0, "text": { "es": "Remover una vez y tapar.", "en": "Stir once and cover." } },
-        { "kind": "DRAWDOWN", "atSecond": 240, "targetFraction": 1.0, "text": { "es": "A los 4 min, apoyar sobre la taza para abrir la valvula.", "en": "At 4 min, set it on the cup to open the valve." } }
+        {
+          "kind": "POUR",
+          "atSecond": 0,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Válvula cerrada. Toda el agua de una vez.",
+            "en": "Valve closed. All the water at once."
+          }
+        },
+        {
+          "kind": "STIR",
+          "atSecond": 30,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Remover una vez y tapar.",
+            "en": "Stir once and cover."
+          }
+        },
+        {
+          "kind": "DRAWDOWN",
+          "atSecond": 240,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "A los 4 min, apoyar sobre la taza para abrir la válvula.",
+            "en": "At 4 min, set it on the cup to open the valve."
+          }
+        }
       ]
     },
     {
@@ -171,10 +355,42 @@
         }
       },
       "steps": [
-        { "kind": "BLOOM", "atSecond": 0, "targetFraction": 0.15, "text": { "es": "Bloom del 15 %, agitar y esperar 45 s.", "en": "Bloom to 15 %, agitate and wait 45 s." } },
-        { "kind": "POUR", "atSecond": 45, "targetFraction": 0.6, "text": { "es": "Subir al 60 % con vertido suave y central.", "en": "Take it to 60 % with a gentle central pour." } },
-        { "kind": "POUR", "atSecond": 90, "targetFraction": 1.0, "text": { "es": "Completar el 100 %.", "en": "Complete 100 %." } },
-        { "kind": "DRAWDOWN", "atSecond": 140, "targetFraction": 1.0, "text": { "es": "Drenado. Si pasa de 4:00, abre un punto la molienda.", "en": "Drawdown. If it goes past 4:00, open the grind a notch." } }
+        {
+          "kind": "BLOOM",
+          "atSecond": 0,
+          "targetFraction": 0.15,
+          "text": {
+            "es": "Bloom del 15 %, agitar y esperar 45 s.",
+            "en": "Bloom to 15 %, agitate and wait 45 s."
+          }
+        },
+        {
+          "kind": "POUR",
+          "atSecond": 45,
+          "targetFraction": 0.6,
+          "text": {
+            "es": "Subir al 60 % con vertido suave y central.",
+            "en": "Take it to 60 % with a gentle central pour."
+          }
+        },
+        {
+          "kind": "POUR",
+          "atSecond": 90,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Completar el 100 %.",
+            "en": "Complete 100 %."
+          }
+        },
+        {
+          "kind": "DRAWDOWN",
+          "atSecond": 140,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Drenado. Si pasa de 4:00, abre un punto la molienda.",
+            "en": "Drawdown. If it goes past 4:00, open the grind a notch."
+          }
+        }
       ]
     },
     {
@@ -185,9 +401,9 @@
       "waterTempC": 95,
       "text": {
         "es": {
-          "name": "Switch de inmersion larga",
+          "name": "Switch de inmersión larga",
           "grindHint": "Media-gruesa",
-          "description": "Dos minutos de inmersion antes de abrir. Sube el dulzor y el cuerpo sin perder la taza limpia del papel."
+          "description": "Dos minutos de inmersión antes de abrir. Sube el dulzor y el cuerpo sin perder la taza limpia del papel."
         },
         "en": {
           "name": "Long steep Switch",
@@ -196,9 +412,33 @@
         }
       },
       "steps": [
-        { "kind": "BLOOM", "atSecond": 0, "targetFraction": 0.2, "text": { "es": "Valvula cerrada. Bloom del 20 % y agitar.", "en": "Valve closed. Bloom to 20 % and agitate." } },
-        { "kind": "POUR", "atSecond": 40, "targetFraction": 1.0, "text": { "es": "Completar el 100 % con la valvula aun cerrada.", "en": "Complete 100 % with the valve still closed." } },
-        { "kind": "DRAWDOWN", "atSecond": 160, "targetFraction": 1.0, "text": { "es": "Abrir la valvula a los 2:40 y dejar percolar.", "en": "Open the valve at 2:40 and let it percolate." } }
+        {
+          "kind": "BLOOM",
+          "atSecond": 0,
+          "targetFraction": 0.2,
+          "text": {
+            "es": "Válvula cerrada. Bloom del 20 % y agitar.",
+            "en": "Valve closed. Bloom to 20 % and agitate."
+          }
+        },
+        {
+          "kind": "POUR",
+          "atSecond": 40,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Completar el 100 % con la válvula aún cerrada.",
+            "en": "Complete 100 % with the valve still closed."
+          }
+        },
+        {
+          "kind": "DRAWDOWN",
+          "atSecond": 160,
+          "targetFraction": 1.0,
+          "text": {
+            "es": "Abrir la válvula a los 2:40 y dejar percolar.",
+            "en": "Open the valve at 2:40 and let it percolate."
+          }
+        }
       ]
     }
   ]
