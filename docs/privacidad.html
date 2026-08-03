@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad — SingularCoffee</title>
+<meta name="description" content="Qué datos maneja SingularCoffee, dónde viven y en qué casos salen del teléfono.">
+<meta name="robots" content="index, follow">
+<style>
+  :root{--ink:#141010;--gradient-top:#2a1d14;--panel:#1f1815;--copper:#e9a66b;
+        --cream:#f6efe7;--muted:#9b8878;--hairline:#3a2c23}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:linear-gradient(160deg,var(--gradient-top),var(--ink) 55%);
+       background-attachment:fixed;color:var(--cream);
+       font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 96px}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+  .mark{width:26px;height:26px;flex:none}
+  .brand{font-size:14px;font-weight:700;letter-spacing:.22em;color:var(--copper);
+         text-transform:uppercase;text-decoration:none}
+  h1{font-size:clamp(28px,5.5vw,40px);line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+  h2{font-size:20px;margin:44px 0 14px;letter-spacing:-.01em}
+  h3{font-size:17px;margin:28px 0 10px;color:var(--copper)}
+  p,li{margin:0 0 14px}
+  ul,ol{padding-left:22px}
+  strong{color:var(--copper);font-weight:600}
+  a{color:var(--copper)}
+  code{font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--copper);
+       background:var(--panel);padding:2px 6px;border-radius:5px}
+  pre{background:var(--panel);border:1px solid var(--hairline);border-radius:10px;
+      padding:14px 16px;overflow-x:auto}
+  pre code{background:none;padding:0;word-break:break-all;white-space:pre-wrap}
+  hr{border:0;border-top:1px solid var(--hairline);margin:40px 0}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 18px}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--hairline);
+        vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:12px;letter-spacing:.12em;
+     text-transform:uppercase}
+  .langs{margin-bottom:28px;font-size:14px;color:var(--muted)}
+  @media (prefers-color-scheme:light){
+    body{background:linear-gradient(160deg,#241a13,var(--ink) 55%)}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 L19 5 L13.4 16 L10.6 16 Z" fill="#e9a66b"/><circle cx="12" cy="19.4" r="1.6" fill="#e9a66b"/></svg>
+    <a class="brand" href="./">SingularCoffee</a>
+  </header>
+  <p class="langs"><a href="privacy.html">Read in English</a></p>
+<h1>Política de privacidad de SingularCoffee</h1>
+<p><strong>Última actualización: 3 de agosto de 2026</strong></p>
+<p>SingularCoffee es una aplicación de Android para preparar café de especialidad. Esta política
+describe qué datos maneja, dónde viven y en qué casos salen del teléfono.</p>
+<p>Está escrita revisando el código, no de memoria. Donde dice que algo no se envía, es porque no
+existe el código que lo enviaría.</p>
+<hr />
+<h2>Resumen</h2>
+<ul>
+<li><strong>No hay cuentas, ni registro, ni inicio de sesión.</strong> La aplicación no sabe quién eres.</li>
+<li><strong>No hay analítica, telemetría, publicidad ni informes de fallos automáticos.</strong> No se incluye
+  ningún SDK de terceros que recoja datos de uso.</li>
+<li><strong>Todo lo que registras se guarda en el propio teléfono</strong>, en una base de datos privada de la
+  aplicación.</li>
+<li><strong>No hay ningún servidor nuestro</strong>, así que no hay nada que subir a él.</li>
+<li>Los datos salen del teléfono en <strong>tres situaciones que inicias tú</strong> y en <strong>una automática del
+  sistema operativo</strong>, que puedes desactivar. Las cuatro se detallan abajo.</li>
+</ul>
+<hr />
+<h2>1. Quién es el responsable</h2>
+<p>Jonatan Malpica, desarrollador independiente.
+Contacto: <strong>malpica.jonatan@gmail.com</strong></p>
+<hr />
+<h2>2. Qué datos guarda la aplicación</h2>
+<p>Todo esto lo escribes tú y se queda en el teléfono. No hay campos de identidad: nunca se pide tu
+nombre, tu correo, tu teléfono ni tu ubicación.</p>
+<p><strong>Cafés.</strong> Nombre, tostador, país, región, finca, productor, variedades, proceso y su detalle,
+altitud, nivel y fecha de tueste, puntaje declarado, notas del tostador, precio por kilo, tamaño
+de bolsa, gramos restantes y un campo de notas libre.</p>
+<p><strong>Equipo.</strong> Cafeteras, molinos (tipo y diámetro de fresas, rango y paso de ajuste), accesorios y
+perfiles de agua (dureza, alcalinidad, calcio, magnesio, sodio, TDS y pH).</p>
+<p><strong>Preparaciones.</strong> Fecha y hora, dosis, agua objetivo, molienda, temperatura, número de vertidos,
+peso final en taza, tiempo total, tiempo de drenado, TDS si lo introduces, peso del poso seco si
+lo mides, la ficha de cata SCA de diez atributos, los descriptores de sabor que elijas o
+escribas, tus notas de cata, una valoración y la receta usada con su autor.</p>
+<p><strong>Curva de la báscula.</strong> Cada preparación grabada guarda la serie de pesos con su marca de tiempo
+—lo que dibuja la curva— y los vertidos detectados.</p>
+<p><strong>Recetas.</strong> Las que crees tú y las que importes del catálogo público.</p>
+<p><strong>Preferencias.</strong> Idioma, unidad de peso, escala de temperatura, si se muestra el campo de TDS y
+si se sincronizan las recetas.</p>
+<p><strong>Fotografías de etiquetas.</strong> Si usas el escaneo de etiqueta, la imagen se guarda
+<strong>temporalmente</strong> en la caché privada de la aplicación y se sobrescribe en el siguiente escaneo.
+No se guarda en tu galería ni se asocia al café: de la foto solo se conserva el texto que
+confirmes.</p>
+<h3>Lo que la aplicación no guarda nunca</h3>
+<p>Tu nombre, tu correo, tu teléfono, tus contactos, tu ubicación, tu dirección IP, identificadores
+de publicidad, el identificador del dispositivo, ni nada sobre otras aplicaciones.</p>
+<hr />
+<h2>3. Permisos y para qué se usan</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Permiso</th>
+<th>Para qué</th>
+<th>Obligatorio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bluetooth</strong> (<code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code>)</td>
+<td>Encontrar tu báscula y leer peso, caudal y cronómetro.</td>
+<td>No: sin báscula la aplicación funciona con su propio cronómetro.</td>
+</tr>
+<tr>
+<td><strong>Ubicación precisa</strong> (<code>ACCESS_FINE_LOCATION</code>)</td>
+<td><strong>Solo en Android 11 o anterior.</strong> Esas versiones exigen el permiso de ubicación para poder buscar dispositivos Bluetooth.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Cámara</strong></td>
+<td>Fotografiar la etiqueta de la bolsa para leer su texto.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Internet</strong></td>
+<td>Descargar el catálogo público de recetas.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Almacenamiento</strong> (<code>WRITE_EXTERNAL_STORAGE</code>)</td>
+<td><strong>Solo en Android 9 o anterior.</strong> Guardar en la galería la imagen que generas para compartir.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sobre el permiso de ubicación, que es el que más suele preocupar: el escaneo se declara con
+<code>neverForLocation</code>, la marca del sistema que indica que la aplicación <strong>no obtiene ni deduce tu
+ubicación a partir de los dispositivos Bluetooth cercanos</strong>. La aplicación no lee tu posición, no
+la guarda y no la envía. En Android 12 y posteriores el permiso ni se pide, porque el sistema ya
+no lo exige para escanear.</p>
+<hr />
+<h2>4. Cuándo salen datos del teléfono</h2>
+<p>Son cuatro casos y ninguno más.</p>
+<h3>4.1 Descargar el catálogo de recetas — automático, desactivable</h3>
+<p>La aplicación pide un archivo público a GitHub:</p>
+<pre><code>https://raw.githubusercontent.com/Jmalpica1010/singularcoffee-app/main/recipes.json
+</code></pre>
+<p>Es una petición de <strong>descarga</strong>: pide el archivo y no manda nada. No lleva identificadores, ni
+datos tuyos, ni nada de tu base de datos. Como en cualquier conexión, <strong>GitHub ve tu dirección
+IP</strong> por el hecho de que tu teléfono se conecta a su servidor; eso lo trata GitHub según
+<a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">su propia política</a>,
+y nosotros no lo recibimos ni lo registramos.</p>
+<p>Ocurre al abrir la aplicación y cuando pulsas «actualizar». Se desactiva en <strong>Ajustes → Recetas
+de la comunidad</strong>; viene activado. Con la sincronización apagada la aplicación no hace <strong>ninguna</strong>
+conexión de red, y sigue funcionando con el catálogo que trae incluido.</p>
+<h3>4.2 Aportar una receta — solo si lo pides</h3>
+<p>Si pulsas «aportar receta», la aplicación abre tu navegador en un formulario de incidencia de
+GitHub con <strong>la receta que elegiste</strong> ya escrita: nombre, autor, dosis, ratio, temperatura y los
+pasos. Nada más: ni tu base de datos, ni tus cafés, ni tus notas de cata.</p>
+<p>Se abre en el navegador y no se envía sola: ves exactamente qué dice antes de publicarlo, y
+puedes cerrarlo. <strong>Una incidencia de GitHub es pública</strong>, y la publicas con tu cuenta de GitHub,
+no con la aplicación.</p>
+<h3>4.3 Reportar un fallo — solo si lo pides</h3>
+<p>En <strong>Ajustes → Reportar un problema</strong> se genera un informe de texto y se abre el selector de
+compartir de Android para que lo mandes por donde quieras. Contiene:</p>
+<ul>
+<li>Versión de la aplicación, versión de Android, fabricante y modelo del teléfono, idioma.</li>
+<li>Nombre anunciado de la báscula, protocolo, estado de conexión, última lectura, caudal y
+  batería.</li>
+<li>Las <strong>últimas doce tramas</strong> recibidas de la báscula en hexadecimal. Son pesos en bruto y
+  sirven para diagnosticar una lectura equivocada, que no se puede diagnosticar mirando el peso.
+  Solo están en memoria y se pierden al cerrar la aplicación.</li>
+<li>Los <strong>números</strong> de tu última preparación: dosis, agua, tiempo, molienda, temperatura,
+  vertidos, TDS, poso seco y el nombre de la receta.</li>
+</ul>
+<p><strong>Deja fuera a propósito</strong> el nombre del café, el tostador y tus notas de cata: es contenido tuyo
+y no ayuda a arreglar nada.</p>
+<p>Tú eliges a quién se lo mandas, y puedes leerlo y editarlo antes de enviarlo.</p>
+<h3>4.4 Copia de seguridad de Android — automática del sistema, desactivable</h3>
+<p>La aplicación permite la copia de seguridad automática de Android e incluye en ella <strong>la base de
+datos de la aplicación</strong> (<code>singular_coffee.db</code>), para que al cambiar de teléfono o reinstalar no
+pierdas tu histórico.</p>
+<p>Esto significa que <strong>tus preparaciones, cafés, equipo y notas de cata se copian a tu cuenta de
+Google Drive</strong>, al espacio de copias de seguridad de aplicaciones. Es un servicio del sistema
+operativo: la copia la hace Android, no la aplicación, va cifrada y solo tú puedes restaurarla.
+Google la trata según <a href="https://policies.google.com/privacy">su política de privacidad</a>.</p>
+<p>Se desactiva desde el sistema, en <strong>Ajustes de Android → Google → Copia de seguridad</strong>, o
+quitando esta aplicación de la copia. Si lo haces, tus datos se quedan únicamente en el teléfono y
+una reinstalación empieza de cero.</p>
+<hr />
+<h2>5. Reconocimiento de texto de las etiquetas</h2>
+<p>El escaneo de etiquetas usa <strong>ML Kit de Google</strong>, en su variante distribuida por Google Play
+Services (<code>play-services-mlkit-text-recognition</code>). El modelo lo instala Google Play y el
+reconocimiento <strong>se ejecuta en el teléfono</strong>.</p>
+<ul>
+<li><strong>La fotografía no se envía a ningún servidor</strong>, ni de Google ni nuestro.</li>
+<li>El texto reconocido tampoco sale del teléfono.</li>
+<li>Google puede recibir información sobre la descarga e instalación del módulo, como con cualquier
+  componente de Play Services, según <a href="https://policies.google.com/privacy">su política</a>.</li>
+</ul>
+<hr />
+<h2>6. La imagen para compartir</h2>
+<p>Al terminar una preparación puedes generar una imagen con sus datos. La aplicación la escribe en
+la caché privada, o en tu galería si eliges guardarla, y usa el selector de Android para que la
+mandes donde quieras.</p>
+<p><strong>La imagen contiene lo que se ve en ella</strong>: nombre del café y su tostador, origen, proceso,
+dosis, agua, ratio, tiempo, temperatura, molienda, rendimiento de extracción, la receta con su
+autor, tu curva, tu radar de cata, tus descriptores y tu puntaje. Si la publicas, todo eso se hace
+público. La aplicación no la envía a ningún sitio por su cuenta.</p>
+<hr />
+<h2>7. Con quién se comparten tus datos</h2>
+<p>Con nadie. No se venden, no se alquilan, no se ceden, no se usan para publicidad ni para entrenar
+modelos. No hay ningún servidor al que se manden.</p>
+<p>Los únicos terceros que intervienen son los de arriba, y solo en lo descrito: <strong>GitHub</strong> (al
+descargar el catálogo, o si decides publicar una receta), <strong>Google</strong> (Play Services para el módulo
+de reconocimiento de texto, y la copia de seguridad de Android si la tienes activada) y <strong>la
+aplicación que tú elijas</strong> al compartir una imagen o un informe.</p>
+<hr />
+<h2>8. Cuánto se guardan y cómo se borran</h2>
+<p>Se guardan mientras tú quieras: no hay caducidad ni borrado automático.</p>
+<ul>
+<li><strong>Un registro concreto</strong>: se borra desde la propia aplicación.</li>
+<li><strong>Todo</strong>: desinstala la aplicación, o usa <strong>Ajustes de Android → Aplicaciones → SingularCoffee
+  → Almacenamiento → Borrar datos</strong>. Al ser todo local, no queda copia en ningún otro sitio.</li>
+<li><strong>Si tenías la copia de seguridad de Android activada</strong>, bórrala también desde tu cuenta de
+  Google: desinstalar la aplicación no borra la copia que ya hizo el sistema.</li>
+</ul>
+<p>No hace falta pedirnos que borremos nada, porque no tenemos nada tuyo. Y por eso mismo tampoco
+podemos recuperar datos perdidos.</p>
+<hr />
+<h2>9. Seguridad</h2>
+<p>La base de datos vive en el almacenamiento privado de la aplicación, al que otras aplicaciones no
+pueden acceder en un Android sin modificar. Las fotografías temporales van a la caché privada. La
+única conexión de red es una descarga por HTTPS.</p>
+<p>La aplicación no guarda contraseñas, ni claves, ni datos de pago, porque no los pide.</p>
+<hr />
+<h2>10. Menores</h2>
+<p>La aplicación no está dirigida a menores de 13 años, no recoge datos de identidad de nadie y no
+hace perfilado. No tiene contenido inadecuado ni funciones sociales internas.</p>
+<hr />
+<h2>11. Transferencias internacionales</h2>
+<p>No transferimos tus datos a ningún país, porque no los recibimos. Las conexiones del apartado 4 se
+dirigen a servidores de GitHub y Google, que pueden estar fuera de tu país y se rigen por sus
+propias políticas.</p>
+<hr />
+<h2>12. Tus derechos</h2>
+<p>Como no se recogen datos personales, no hay un expediente tuyo del que pedir acceso,
+rectificación, supresión, oposición o portabilidad: los datos están en tu teléfono y los
+controlas directamente, incluido exportarlos como imagen o borrarlos por completo.</p>
+<p>Si vives en la Unión Europea, el Reino Unido, California o México y crees que algo de esta
+política no se cumple, escribe a <strong>malpica.jonatan@gmail.com</strong>.</p>
+<hr />
+<h2>13. Cambios en esta política</h2>
+<p>Si cambia, se actualiza la fecha del encabezado y queda el historial completo en el repositorio
+público. Un cambio que amplíe lo que sale del teléfono se anunciará dentro de la aplicación antes
+de que ocurra, no después.</p>
+<hr />
+<h2>14. Contacto</h2>
+<p><strong>malpica.jonatan@gmail.com</strong></p>
+<p>Para un problema técnico es mejor usar <strong>Ajustes → Reportar un problema</strong>, que adjunta la
+información necesaria y ahorra una ronda de preguntas.</p>
+</div>
+</body>
+</html>

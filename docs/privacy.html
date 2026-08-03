@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — SingularCoffee</title>
+<meta name="description" content="What data SingularCoffee handles, where it lives, and when it leaves your phone.">
+<meta name="robots" content="index, follow">
+<style>
+  :root{--ink:#141010;--gradient-top:#2a1d14;--panel:#1f1815;--copper:#e9a66b;
+        --cream:#f6efe7;--muted:#9b8878;--hairline:#3a2c23}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:linear-gradient(160deg,var(--gradient-top),var(--ink) 55%);
+       background-attachment:fixed;color:var(--cream);
+       font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 96px}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+  .mark{width:26px;height:26px;flex:none}
+  .brand{font-size:14px;font-weight:700;letter-spacing:.22em;color:var(--copper);
+         text-transform:uppercase;text-decoration:none}
+  h1{font-size:clamp(28px,5.5vw,40px);line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+  h2{font-size:20px;margin:44px 0 14px;letter-spacing:-.01em}
+  h3{font-size:17px;margin:28px 0 10px;color:var(--copper)}
+  p,li{margin:0 0 14px}
+  ul,ol{padding-left:22px}
+  strong{color:var(--copper);font-weight:600}
+  a{color:var(--copper)}
+  code{font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--copper);
+       background:var(--panel);padding:2px 6px;border-radius:5px}
+  pre{background:var(--panel);border:1px solid var(--hairline);border-radius:10px;
+      padding:14px 16px;overflow-x:auto}
+  pre code{background:none;padding:0;word-break:break-all;white-space:pre-wrap}
+  hr{border:0;border-top:1px solid var(--hairline);margin:40px 0}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 18px}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--hairline);
+        vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:12px;letter-spacing:.12em;
+     text-transform:uppercase}
+  .langs{margin-bottom:28px;font-size:14px;color:var(--muted)}
+  @media (prefers-color-scheme:light){
+    body{background:linear-gradient(160deg,#241a13,var(--ink) 55%)}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 L19 5 L13.4 16 L10.6 16 Z" fill="#e9a66b"/><circle cx="12" cy="19.4" r="1.6" fill="#e9a66b"/></svg>
+    <a class="brand" href="./">SingularCoffee</a>
+  </header>
+  <p class="langs"><a href="privacidad.html">Leer en español</a></p>
+<h1>SingularCoffee Privacy Policy</h1>
+<p><strong>Last updated: 3 August 2026</strong></p>
+<p>SingularCoffee is an Android app for brewing specialty coffee. This policy describes what data it
+handles, where that data lives, and the cases in which it leaves your phone.</p>
+<p>It was written by reading the code, not from memory. Where it says something is not sent, it is
+because the code that would send it does not exist.</p>
+<hr />
+<h2>Summary</h2>
+<ul>
+<li><strong>No accounts, no sign-up, no login.</strong> The app does not know who you are.</li>
+<li><strong>No analytics, telemetry, advertising or automatic crash reporting.</strong> No third-party SDK that
+  collects usage data is included.</li>
+<li><strong>Everything you record is stored on the phone itself</strong>, in a database private to the app.</li>
+<li><strong>There is no server of ours</strong>, so there is nothing to upload to one.</li>
+<li>Data leaves the phone in <strong>three situations you start yourself</strong> and in <strong>one automatic one
+  belonging to the operating system</strong>, which you can turn off. All four are detailed below.</li>
+</ul>
+<hr />
+<h2>1. Who is responsible</h2>
+<p>Jonatan Malpica, independent developer.
+Contact: <strong>malpica.jonatan@gmail.com</strong></p>
+<hr />
+<h2>2. What the app stores</h2>
+<p>You write all of this and it stays on the phone. There are no identity fields: it never asks for
+your name, your email, your phone number or your location.</p>
+<p><strong>Coffees.</strong> Name, roaster, country, region, farm, producer, varietals, process and its detail,
+altitude, roast level and date, declared score, roaster's notes, price per kilo, bag size,
+remaining grams, and a free notes field.</p>
+<p><strong>Equipment.</strong> Brewers, grinders (burr type and diameter, adjustment range and step), accessories
+and water profiles (hardness, alkalinity, calcium, magnesium, sodium, TDS and pH).</p>
+<p><strong>Brews.</strong> Date and time, dose, target water, grind, temperature, number of pours, final beverage
+weight, total time, drawdown time, TDS if you enter it, dry spent grounds weight if you measure
+it, the ten-attribute SCA cupping form, the flavour descriptors you pick or type, your tasting
+notes, a rating, and the recipe used with its author.</p>
+<p><strong>Scale curve.</strong> Every recorded brew keeps the series of weights with their timestamps — what
+draws the curve — and the pours detected from it.</p>
+<p><strong>Recipes.</strong> The ones you create and the ones you import from the public catalogue.</p>
+<p><strong>Preferences.</strong> Language, weight unit, temperature scale, whether the TDS field is shown, and
+whether recipes sync.</p>
+<p><strong>Label photographs.</strong> If you use label scanning, the image is stored <strong>temporarily</strong> in the app's
+private cache and is overwritten on the next scan. It is not saved to your gallery and is not
+attached to the coffee: all that is kept from the photo is the text you confirm.</p>
+<h3>What the app never stores</h3>
+<p>Your name, your email, your phone number, your contacts, your location, your IP address,
+advertising identifiers, the device identifier, or anything about other apps.</p>
+<hr />
+<h2>3. Permissions and what they are for</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>What for</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bluetooth</strong> (<code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code>)</td>
+<td>Find your scale and read weight, flow rate and timer.</td>
+<td>No: without a scale the app works with its own timer.</td>
+</tr>
+<tr>
+<td><strong>Precise location</strong> (<code>ACCESS_FINE_LOCATION</code>)</td>
+<td><strong>Android 11 and earlier only.</strong> Those versions require the location permission in order to scan for Bluetooth devices.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Camera</strong></td>
+<td>Photograph the bag's label to read its text.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Internet</strong></td>
+<td>Download the public recipe catalogue.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Storage</strong> (<code>WRITE_EXTERNAL_STORAGE</code>)</td>
+<td><strong>Android 9 and earlier only.</strong> Save the image you generate for sharing to your gallery.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<p>About the location permission, which is the one that usually worries people: scanning is declared
+with <code>neverForLocation</code>, the system flag stating that the app <strong>does not obtain or infer your
+location from nearby Bluetooth devices</strong>. The app does not read your position, does not store it
+and does not send it. On Android 12 and later the permission is not even requested, because the
+system no longer requires it for scanning.</p>
+<hr />
+<h2>4. When data leaves the phone</h2>
+<p>There are four cases and no others.</p>
+<h3>4.1 Downloading the recipe catalogue — automatic, can be turned off</h3>
+<p>The app requests a public file from GitHub:</p>
+<pre><code>https://raw.githubusercontent.com/Jmalpica1010/singularcoffee-app/main/recipes.json
+</code></pre>
+<p>It is a <strong>download</strong>: it asks for the file and sends nothing. It carries no identifiers, no data
+of yours, nothing from your database. As with any connection, <strong>GitHub sees your IP address</strong>
+simply because your phone connects to its server; GitHub handles that under
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">its own policy</a>,
+and we neither receive nor log it.</p>
+<p>This happens when you open the app and when you tap "refresh". It is turned off under
+<strong>Settings → Community recipes</strong>; it ships enabled. With syncing off the app makes <strong>no</strong> network
+connection at all, and still works with the catalogue bundled inside it.</p>
+<h3>4.2 Contributing a recipe — only if you ask for it</h3>
+<p>If you tap "contribute recipe", the app opens your browser on a GitHub issue form with <strong>the
+recipe you chose</strong> already written out: name, author, dose, ratio, temperature and the steps.
+Nothing else: not your database, not your coffees, not your tasting notes.</p>
+<p>It opens in the browser and does not send itself: you see exactly what it says before publishing
+it, and you can close it. <strong>A GitHub issue is public</strong>, and you publish it with your GitHub
+account, not with the app.</p>
+<h3>4.3 Reporting a problem — only if you ask for it</h3>
+<p>Under <strong>Settings → Report a problem</strong> a text report is generated and Android's share sheet opens
+so you can send it wherever you want. It contains:</p>
+<ul>
+<li>App version, Android version, phone manufacturer and model, language.</li>
+<li>The scale's advertised name, protocol, connection state, last reading, flow rate and battery.</li>
+<li>The <strong>last twelve frames</strong> received from the scale, in hexadecimal. These are raw weights and
+  they exist to diagnose a wrong reading, which cannot be diagnosed by looking at the weight.
+  They live only in memory and are lost when the app closes.</li>
+<li>The <strong>numbers</strong> from your last brew: dose, water, time, grind, temperature, pours, TDS, dry
+  spent grounds and the recipe name.</li>
+</ul>
+<p>It <strong>deliberately leaves out</strong> the coffee's name, the roaster and your tasting notes: that is your
+content and it does not help fix anything.</p>
+<p>You choose who you send it to, and you can read and edit it before sending.</p>
+<hr />
+<h3>4.4 Android backup — automatic, belongs to the system, can be turned off</h3>
+<p>The app allows Android's automatic backup and includes <strong>the app's database</strong>
+(<code>singular_coffee.db</code>) in it, so that changing phones or reinstalling does not lose your history.</p>
+<p>This means <strong>your brews, coffees, equipment and tasting notes are copied to your Google Drive
+account</strong>, into the app-backup space. It is an operating-system service: Android makes the copy,
+not the app, it is encrypted, and only you can restore it. Google handles it under
+<a href="https://policies.google.com/privacy">its privacy policy</a>.</p>
+<p>You turn it off from the system, under <strong>Android Settings → Google → Backup</strong>, or by removing this
+app from the backup. If you do, your data stays on the phone only and a reinstall starts from
+scratch.</p>
+<hr />
+<h2>5. Label text recognition</h2>
+<p>Label scanning uses <strong>Google's ML Kit</strong>, in the variant distributed by Google Play Services
+(<code>play-services-mlkit-text-recognition</code>). Google Play installs the model and recognition <strong>runs on
+the phone</strong>.</p>
+<ul>
+<li><strong>The photograph is not sent to any server</strong>, neither Google's nor ours.</li>
+<li>The recognised text does not leave the phone either.</li>
+<li>Google may receive information about downloading and installing the module, as with any Play
+  Services component, under <a href="https://policies.google.com/privacy">its policy</a>.</li>
+</ul>
+<hr />
+<h2>6. The share image</h2>
+<p>When you finish a brew you can generate an image with its data. The app writes it to the private
+cache, or to your gallery if you choose to save it, and uses Android's share sheet so you can send
+it wherever you want.</p>
+<p><strong>The image contains what is visible on it</strong>: the coffee's name and roaster, origin, process,
+dose, water, ratio, time, temperature, grind, extraction yield, the recipe with its author, your
+curve, your cupping radar, your descriptors and your score. If you publish it, all of that becomes
+public. The app does not send it anywhere on its own.</p>
+<hr />
+<h2>7. Who your data is shared with</h2>
+<p>Nobody. It is not sold, rented or handed over, and it is not used for advertising or for training
+models. There is no server for it to be sent to.</p>
+<p>The only third parties involved are the ones above, and only as described: <strong>GitHub</strong> (when
+downloading the catalogue, or if you decide to publish a recipe), <strong>Google</strong> (Play Services for the
+text-recognition module, and Android backup if you have it enabled) and <strong>whichever app you
+choose</strong> when sharing an image or a report.</p>
+<hr />
+<h2>8. How long data is kept, and how to delete it</h2>
+<p>It is kept as long as you want: there is no expiry and no automatic deletion.</p>
+<ul>
+<li><strong>A single record</strong>: delete it from within the app.</li>
+<li><strong>Everything</strong>: uninstall the app, or use <strong>Android Settings → Apps → SingularCoffee → Storage →
+  Clear data</strong>. Since everything is local, no copy remains anywhere else.</li>
+<li><strong>If you had Android backup enabled</strong>, delete that copy from your Google account too:
+  uninstalling the app does not delete a backup the system already made.</li>
+</ul>
+<p>You do not need to ask us to delete anything, because we hold nothing of yours. For the same
+reason, we cannot recover lost data.</p>
+<hr />
+<h2>9. Security</h2>
+<p>The database lives in the app's private storage, which other apps cannot reach on an unmodified
+Android. Temporary photographs go to the private cache. The only network connection is an HTTPS
+download.</p>
+<p>The app stores no passwords, keys or payment details, because it does not ask for any.</p>
+<hr />
+<h2>10. Children</h2>
+<p>The app is not directed at children under 13, collects identity data from nobody, and does no
+profiling. It has no inappropriate content and no internal social features.</p>
+<hr />
+<h2>11. International transfers</h2>
+<p>We do not transfer your data to any country, because we do not receive it. The connections in
+section 4 go to GitHub and Google servers, which may sit outside your country and are governed by
+their own policies.</p>
+<hr />
+<h2>12. Your rights</h2>
+<p>Because no personal data is collected, there is no file of yours to request access to, or to
+rectify, erase, object to or port: the data is on your phone and you control it directly,
+including exporting it as an image or deleting it entirely.</p>
+<p>If you live in the European Union, the United Kingdom, California or Mexico and believe something
+in this policy is not being honoured, write to <strong>malpica.jonatan@gmail.com</strong>.</p>
+<hr />
+<h2>13. Changes to this policy</h2>
+<p>If it changes, the date in the header is updated and the full history remains in the public
+repository. A change that widens what leaves the phone will be announced inside the app before it
+happens, not after.</p>
+<hr />
+<h2>14. Contact</h2>
+<p><strong>malpica.jonatan@gmail.com</strong></p>
+<p>For a technical problem it is better to use <strong>Settings → Report a problem</strong>, which attaches the
+information needed and saves a round of questions.</p>
+</div>
+</body>
+</html>
