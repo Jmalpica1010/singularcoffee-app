@@ -1,6 +1,15 @@
-# Community Recipes
+# SingularCoffee — public
 
-Public recipe catalogue for [SingularCoffee](https://github.com/Jmalpica1010/SingularCoffee).
+The landing page and the public recipe catalogue of SingularCoffee, an Android
+app for specialty coffee. The app itself is a private repository; this one holds
+what has to be readable with no account:
+
+- **`recipes.json`** — the catalogue the app refreshes from.
+- **`docs/`** — the page published at
+  <https://jmalpica1010.github.io/singular-coffee/>.
+- **Issues** — where a missing scale, a bug, or a recipe gets reported.
+
+## The catalogue
 
 The app ships a copy of this file inside the APK, so it works from the first
 launch and with no connection. When there is network it refreshes from here, so
@@ -52,8 +61,10 @@ Append an object to `recipes` and open a pull request.
 `SWIRL`, `STIR`, `DRAWDOWN` (these do not).
 
 The distinction matters during a brew: the app drives pours by weight from the
-scale, and a step that adds no water can never reach a weight target, so those
-are confirmed by hand instead. Getting `kind` wrong leaves the guide stuck.
+scale, and a step that adds no water can never reach a weight target on its own.
+Those are shown as an instruction in place of the running weight, and the guide
+moves on by itself as soon as the scale starts climbing again — there is nothing
+to press with wet hands. Getting `kind` wrong is what leaves the guide stuck.
 
 A pour's target is either:
 
