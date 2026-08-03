@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SingularCoffee — la app que lee tu báscula, sea cual sea</title>
+<meta name="description" content="App Android para café de especialidad. Lee diez familias de básculas Bluetooth: BOOKOO, Acaia, Timemore, MyScale KP2048B, Felicita, Varia AKU, Decent, Eureka Precisa y WeighMyBru. Calcula la extracción sin refractómetro.">
+<meta property="og:title" content="SingularCoffee">
+<meta property="og:description" content="Lee diez familias de básculas Bluetooth y calcula tu extracción sin refractómetro.">
+<meta property="og:image" content="card-curve.png">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --ink: #141010;
+    --gradient-top: #2a1d14;
+    --panel: #1f1815;
+    --panel-raised: #2a211b;
+    --copper: #e9a66b;
+    --cream: #f6efe7;
+    --muted: #9b8878;
+    --hairline: #3a2c23;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: linear-gradient(160deg, var(--gradient-top), var(--ink) 55%);
+    background-attachment: fixed;
+    color: var(--cream);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 56px 24px 96px; }
+
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 64px; }
+  .mark { width: 30px; height: 30px; flex: none; }
+  .brand {
+    font-size: 15px; font-weight: 700; letter-spacing: .22em;
+    color: var(--copper); text-transform: uppercase;
+  }
+
+  h1 { font-size: clamp(34px, 7vw, 52px); line-height: 1.08; margin: 0 0 20px; letter-spacing: -.02em; }
+  .lede { font-size: clamp(19px, 3.4vw, 23px); color: var(--cream); margin: 0 0 14px; }
+  .sub { color: var(--muted); margin: 0 0 44px; }
+
+  h2 {
+    font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--muted); margin: 64px 0 20px;
+  }
+  p { margin: 0 0 18px; }
+  strong { color: var(--copper); font-weight: 600; }
+
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin: 0 0 12px; }
+  .shots img {
+    width: 100%; height: auto; display: block;
+    border-radius: 14px; border: 1px solid var(--hairline);
+  }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 10px; }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 18px; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 15px; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+  td code {
+    font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: var(--copper); background: var(--panel); padding: 2px 7px; border-radius: 5px;
+  }
+
+  .card {
+    background: var(--panel); border: 1px solid var(--hairline);
+    border-radius: 16px; padding: 26px 28px; margin: 0 0 18px;
+  }
+  .card h3 { margin: 0 0 10px; font-size: 20px; }
+  .card p:last-child { margin-bottom: 0; }
+
+  .cta {
+    display: inline-block; background: var(--copper); color: #2a1d14;
+    font-weight: 700; text-decoration: none; padding: 15px 30px;
+    border-radius: 999px; margin: 8px 0 12px;
+  }
+  .cta:hover { filter: brightness(1.08); }
+  .note { color: var(--muted); font-size: 14px; }
+  a { color: var(--copper); }
+
+  footer {
+    margin-top: 80px; padding-top: 26px; border-top: 1px solid var(--hairline);
+    color: var(--muted); font-size: 14px;
+  }
+
+  @media (prefers-color-scheme: light) {
+    /* La paleta es la de la app y es oscura por diseño; en claro solo se
+       suaviza el fondo para que no deslumbre junto al resto del sistema. */
+    body { background: linear-gradient(160deg, #241a13, var(--ink) 55%); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 5 L19 5 L13.4 16 L10.6 16 Z" fill="#e9a66b"/>
+      <circle cx="12" cy="19.4" r="1.6" fill="#e9a66b"/>
+    </svg>
+    <span class="brand">SingularCoffee</span>
+  </header>
+
+  <h1>La app que lee tu báscula, sea cual sea.</h1>
+
+  <p class="lede">
+    Café de especialidad en filtrado y espresso manual, en Android. Sigue tu vertido
+    gramo a gramo desde la báscula, te dice tu rendimiento de extracción
+    <strong>sin refractómetro</strong>, y saca una imagen del café que acabas de
+    hacer lista para publicar.
+  </p>
+  <p class="sub">
+    En pruebas cerradas. Español e inglés. Todo vive en el teléfono.
+  </p>
+
+  <h2>Lo que sale de cada extracción</h2>
+  <div class="shots">
+    <figure style="margin:0">
+      <img src="card-curve.png" alt="Tarjeta con la curva de extracción y el perfil de sabor">
+    </figure>
+    <figure style="margin:0">
+      <img src="card-flavor.png" alt="Tarjeta con el radar de cata">
+    </figure>
+  </div>
+  <figcaption>
+    Una imagen por preparación, con los datos reales de la báscula: dosis, agua
+    vertida, ratio, tiempo, la curva y tu ficha de cata.
+  </figcaption>
+
+  <h2>Básculas compatibles</h2>
+  <p>
+    Aquí está la diferencia. Casi todas las apps del gremio leen Acaia y, con suerte,
+    una más. Si tienes una Felicita, una MyScale KP2048B o una Varia, llevas años
+    escuchando <em>cómprate una Acaia</em>.
+  </p>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Báscula</th><th>Se anuncia como</th><th>Notas</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>BOOKOO Themis, Themis Ultra</td><td><code>BOOKOO</code> <code>BK</code></td><td>La única que publica caudal y batería.</td></tr>
+      <tr><td>Acaia Lunar, Pearl, Pyxis, Cinco</td><td><code>ACAIA</code> <code>LUNAR</code> <code>PYXIS</code></td><td>Modelos antiguos y nuevos.</td></tr>
+      <tr><td>Timemore Black Mirror</td><td><code>Timemore Scale</code></td><td></td></tr>
+      <tr><td>Timemore Dot</td><td><code>TIMEMORE_Dot</code></td><td>Protocolo distinto al de la Black Mirror.</td></tr>
+      <tr><td>MyScale KP2048B</td><td><code>MY_SCALE</code> <code>blackcoffee</code></td><td>La económica que se vende con varios nombres.</td></tr>
+      <tr><td>Felicita Arc</td><td><code>FELICITA</code></td><td></td></tr>
+      <tr><td>Varia AKU, AKU Mini</td><td><code>VARIA AKU</code> <code>AKU SCALE</code></td><td>Publica cronómetro.</td></tr>
+      <tr><td>Decent Scale</td><td><code>Decent Scale</code></td><td>También EspressiScale.</td></tr>
+      <tr><td>Eureka Precisa</td><td><code>CFS-9002</code> <code>LSJ-001</code></td><td></td></tr>
+      <tr><td>WeighMyBru</td><td><code>WeighMyBru</code></td><td>La abierta hecha con ESP32.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">
+    Sin báscula funciona igual, con su propio cronómetro. Si tienes una que no está
+    en la lista y su protocolo es público,
+    <a href="https://github.com/Jmalpica1010/CommunityRecipes/issues/new">dilo aquí</a>.
+  </p>
+
+  <h2>Tu extracción sin refractómetro</h2>
+  <div class="card">
+    <h3>Seca el poso y pésalo</h3>
+    <p>
+      Todo lo que se disolvió en la taza ya no está en el lecho. La diferencia
+      entre lo que moliste y lo que queda al secarlo <em>es</em> la masa extraída:
+    </p>
+    <p><strong>Rendimiento = (dosis − poso seco) ÷ dosis × 100</strong></p>
+    <p>
+      Es el método con el que se calibran los refractómetros. Solo necesita la
+      báscula que ya tienes: recoge el lecho, sécalo, pésalo frío y anótalo. La app
+      hace el resto y te sitúa en la ventana de la SCA.
+    </p>
+  </div>
+
+  <h2>Y lo demás</h2>
+  <div class="card">
+    <h3>La guía sigue tu peso, no un reloj</h3>
+    <p>
+      Verter es una operación de báscula. La guía te dice cuántos gramos faltan para
+      cerrar el vertido en curso, y cuando toca remover o hacer swirl te lo enseña y
+      avanza sola en cuanto vuelves a verter. Sin botones que pulsar con las manos
+      ocupadas.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Tu molino como lo anotas tú</h3>
+    <p>
+      Un Kinu M47 se ajusta en <code>4.3.2</code> —cuatro vueltas y 3.2 marcas—, no
+      en un número suelto. La app guarda cada molino con su notación y lo escribe
+      como lo lees en el dial.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Espresso manual con su propia ventana</h3>
+    <p>
+      Flair completa, Cafelat Robot, ROK, Picopresso, 9Barista, La Pavoni. Un
+      espresso ronda el 10 % de TDS y un filtrado el 1.3 %: con una sola ventana
+      cualquier shot saldría marcado como «demasiado fuerte». Cada familia tiene la
+      suya.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Recetas de la comunidad, con su autor</h3>
+    <p>
+      El catálogo es público y vive en este mismo repositorio. Cada receta lleva
+      acreditado a quien la diseñó, y desde la app puedes aportar la tuya de un
+      toque. Se actualiza sin necesidad de actualizar la app.
+    </p>
+  </div>
+
+  <h2>Quiero probarla</h2>
+  <p>
+    Está en pruebas cerradas con un grupo pequeño mientras se pule. Si quieres entrar
+    cuando se abra, deja tu correo y te aviso — sin lista de novedades ni nada más.
+  </p>
+  <!-- PENDIENTE: poner aquí el destino de la lista de espera.
+       Dos opciones, las dos gratis y sin servidor:
+         · un formulario (Tally, Google Forms) — recomendado, no expone tu correo
+         · mailto:TU-CORREO — más simple, pero queda público y atrae spam
+       Mientras esto siga en "#", el botón no lleva a ningún sitio. -->
+  <a class="cta" href="#">Apuntarme a la lista</a>
+  <p class="note">
+    Dime qué báscula tienes: es lo que decide a quién puedo dar acceso primero.
+  </p>
+
+  <footer>
+    <p>
+      Catálogo de recetas y reportes:
+      <a href="https://github.com/Jmalpica1010/CommunityRecipes">github.com/Jmalpica1010/CommunityRecipes</a>
+    </p>
+    <p>
+      Los protocolos de báscula se implementaron a partir de la documentación de
+      BOOKOO, de <a href="https://github.com/lucapinello/pyacaia">pyacaia</a> y de
+      <a href="https://github.com/gaggimate/esp-arduino-ble-scales">esp-arduino-ble-scales</a>,
+      la librería de Gaggiuino y GaggiMate.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
