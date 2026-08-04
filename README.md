@@ -25,7 +25,55 @@ is separate and public.
 
 ## Adding a recipe
 
-Append an object to `recipes` and open a pull request.
+**From the app:** open the recipe and tap contribute. It opens an issue here with
+the entry already formatted. A maintainer adds the **`receta aprobada`** label and
+a workflow validates it, appends it to `recipes.json`, commits, and closes the
+issue. Nobody edits JSON by hand.
+
+The label is the gate on purpose. This file is downloaded into everyone's app, so
+merging whatever an anonymous account posts would be letting a stranger write into
+other people's phones. The robot does the mechanical part; the approval stays
+human.
+
+**No GitHub account?** Share the recipe from the app as a file — it goes over
+whatever you already use, and whoever receives it reads it with
+Settings → Backup → Import. Send it to a maintainer and they can put it here.
+
+**By hand:** append an object to `recipes` and open a pull request. `scripts/` will
+check it:
+
+```bash
+python3 -c "import sys;sys.path.insert(0,'scripts');
+from catalogue import load,validate_catalogue;print(validate_catalogue(load('recipes.json')))"
+```
+
+### Bringing a new brewing method
+
+A recipe can carry the method it was designed for, so someone can contribute a
+recipe for a brewer the app has never heard of. Add an optional `brewer` object;
+the app creates it on import if the phone does not have it, matching by name and
+brand, and never touches one that already exists — that one may be tuned to its
+owner's taste.
+
+```json
+"brewer": {
+  "name": "Origami S",
+  "brand": "Origami",
+  "style": "POUR_OVER",
+  "geometry": "CONICAL",
+  "filterMaterial": "ABACA",
+  "capacityMl": 400,
+  "defaultRatio": 16.0,
+  "defaultTempC": 92.0
+}
+```
+
+`style` is one of `POUR_OVER`, `IMMERSION`, `HYBRID`, `COLD_BREW`, `ESPRESSO`,
+`OTHER`. `geometry` one of `CONICAL`, `FLAT_BOTTOM`, `WAVE`, `CYLINDRICAL`,
+`BASKET`, `OTHER`. `filterMaterial` one of `PAPER_BLEACHED`, `PAPER_NATURAL`,
+`ABACA`, `CLOTH`, `METAL`, `NONE`. A value the app does not know is not fatal — it
+falls back to `OTHER` — but then the method arrives badly described, so the
+validator rejects it rather than letting it through quietly.
 
 ```json
 {
