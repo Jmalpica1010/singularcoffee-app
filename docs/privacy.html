@@ -148,7 +148,7 @@ and does not send it. On Android 12 and later the permission is not even request
 system no longer requires it for scanning.</p>
 <hr />
 <h2>4. When data leaves the phone</h2>
-<p>There are four cases and no others.</p>
+<p>There are five cases and no others.</p>
 <h3>4.1 Downloading the recipe catalogue — automatic, can be turned off</h3>
 <p>The app requests a public file from GitHub:</p>
 <pre><code>https://raw.githubusercontent.com/Jmalpica1010/singularcoffee-app/main/recipes.json
@@ -184,7 +184,15 @@ so you can send it wherever you want. It contains:</p>
 content and it does not help fix anything.</p>
 <p>You choose who you send it to, and you can read and edit it before sending.</p>
 <hr />
-<h3>4.4 Android backup — automatic, belongs to the system, can be turned off</h3>
+<h3>4.4 Exporting your own backup — only if you ask for it</h3>
+<p>Under <strong>Settings → Backup</strong>, "Export" writes <strong>everything of yours</strong> to a file: coffees, equipment,
+recipes, brews with their curves, and your tasting notes. You choose where with Android's file
+picker, so it can end up on the phone, in your Drive, or wherever you decide.</p>
+<p>It is deliberately readable text: a backup only the app can open is not a backup. Which also means
+<strong>the file holds all your data unencrypted</strong> — whoever has it, has them. Treat it accordingly.</p>
+<p>The app does not send it anywhere: it only writes it where you say. Importing does not delete
+anything either; for each record the most recent version wins.</p>
+<h3>4.5 Android backup — automatic, belongs to the system, can be turned off</h3>
 <p>The app allows Android's automatic backup and includes <strong>the app's database</strong>
 (<code>singular_coffee.db</code>) in it, so that changing phones or reinstalling does not lose your history.</p>
 <p>This means <strong>your brews, coffees, equipment and tasting notes are copied to your Google Drive
