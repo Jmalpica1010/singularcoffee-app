@@ -440,6 +440,55 @@
           }
         }
       ]
+    },
+    {
+      "id": "prueba-del-circuito",
+      "author": "SingularCoffee",
+      "doseGrams": 18.0,
+      "ratio": 16.0,
+      "waterTempC": 92.0,
+      "text": {
+        "es": {
+          "name": "Prueba del circuito",
+          "grindHint": "Media",
+          "description": "Entrada de prueba del flujo de aportacion. Se borra."
+        },
+        "en": {
+          "name": "Pipeline check",
+          "grindHint": "Medium",
+          "description": "Test entry for the contribution flow. Will be removed."
+        }
+      },
+      "brewer": {
+        "name": "Origami S",
+        "brand": "Origami",
+        "style": "POUR_OVER",
+        "geometry": "CONICAL",
+        "filterMaterial": "ABACA",
+        "capacityMl": 400,
+        "defaultRatio": 16.0,
+        "defaultTempC": 92.0
+      },
+      "steps": [
+        {
+          "kind": "BLOOM",
+          "atSecond": 0,
+          "doseMultiple": 2.5,
+          "text": {
+            "es": "Bloom y agitar",
+            "en": "Bloom and swirl"
+          }
+        },
+        {
+          "kind": "POUR",
+          "atSecond": 45,
+          "targetFraction": 1,
+          "text": {
+            "es": "Completar el vertido",
+            "en": "Finish the pour"
+          }
+        }
+      ]
     }
   ]
 }
